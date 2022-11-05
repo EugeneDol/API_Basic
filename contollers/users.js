@@ -7,10 +7,6 @@ export const createUser = (req,res) => {
 
     const user = req.body;
 
-    //const userID = uuidv4();
-
-    //const userWithID = {... user, id: uuidv4()}
-
     users.push({... user, id: uuidv4()});
 
     res.send(`USer with username${user.name} added to databasem`)
